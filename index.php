@@ -5,7 +5,6 @@ require 'function/debug.php'; //debug
 require_once 'function/url.php';
 define("SITE_DIR", '/');
 
-
 $url = url($_SERVER["REQUEST_URI"]);
 
 if(isset($url)){

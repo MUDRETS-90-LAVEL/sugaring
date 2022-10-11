@@ -13,13 +13,17 @@
                 <!-- Сдесь выводить циклом надо  -->
 
                 <?php foreach($arr as $elem): ?>
-                        <img style="width: 100px" src="/img/slider/<?=$elem['img']?>" alt="<?=$elem['title']?>">
-                        <p><label>Название</label>
-                        <input type="text" value="<?=$elem['title']?>" disabled></p>
-                        <p><label>Описание</label>
-                        <p><textarea rows="10" cols="45" disabled><?=$elem['mini_description']?></textarea></p>
-                        <p><label>Ссылка</label>
-                        <input type="url" value="<?=$elem['link']?>" disabled></p>
+                        <div class="item_wrapp">
+                            <div class="item_img"><img class="img_elem" src="/img/slider/<?=$elem['img']?>" alt="<?=$elem['title']?>"></div>
+                            <div class="item_info">
+                                <p><label>Название</label>
+                                <input type="text" value="<?=$elem['title']?>" disabled></p>
+                                <p><label>Краткая информация</label>
+                                <textarea disabled><?=$elem['mini_description']?></textarea></p>
+                                <p><label>Ссылка</label>
+                                <input type="url" value="<?=$elem['link']?>" disabled></p>
+                            </div>
+                        </div>
                 <?php endforeach;?>       
             </div>
         </div>
