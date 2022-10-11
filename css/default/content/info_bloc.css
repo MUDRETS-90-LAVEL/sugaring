@@ -1,0 +1,22 @@
+.info_bloc_content{
+    /* padding-top: 20px; */
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+.info_bloc_content_item{
+    font-family: 'Roboto',sans-serif;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+@media (max-width: 1000px){
+    .info_bloc_content{
+        margin: 0px 10px;
+    }
+    .info_bloc_content_item{
+        font-size: 16px;
+    }
+}

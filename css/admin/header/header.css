@@ -1,0 +1,93 @@
+.header{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.header-top{
+    background-color: #fff;
+    height: auto;
+}
+.content{
+    width: 100%;
+    max-width: 1274px;
+    height: auto;
+    margin: 0 auto;
+}
+.breacrums{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+}
+.top_head{
+    position: relative;
+}
+.header_title{
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.header_fio{
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.time_day{
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    margin-right: 16px;
+}
+.logout{
+    text-decoration: none;
+    color: red;
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.date_time{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.today_date{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+}
+span.date{
+    margin-right: 16px;
+}
+.breadcrumbs_link{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: 'Roboto',sans-serif;
+    background-color: black;
+    margin-top: 10px;
+}
+.breadcrumbs_link a{
+    text-decoration: none;
+    color: #c8012e;
+    cursor: pointer;
+}
+.bred{
+    margin-left: 20px;
+}
+.breadcrumbs_link span{
+    margin: 0px 6px;
+    font-weight: bold;
+    color: #c8012e;
+}
+.breadcrumbs_link a:hover{
+    border-bottom: 1px dashed #fff;
+    color: #fff;
+    cursor: pointer;
+}

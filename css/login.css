@@ -1,0 +1,69 @@
+body{
+    background-color: rgba(147,112,219, 0.3);
+}
+.box{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0px 0px 5px 5px;
+    border-top: 4px solid #54CCEF;
+    background-image: linear-gradient(to left, #18364E 50%, #204359 50%);
+}
+img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 58px;
+    left: 148px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+img:hover{
+    transform: scaleX(-1);
+}
+form{
+    margin-top: -40px;
+}
+.input-box{
+    display: inline-block;
+    position: relative;
+    left: 110px;
+    margin-bottom: 15px;
+}
+input{
+    display: block;
+    border-radius: 2px;
+    border: none;
+    padding: 5px 30px;
+    font-size: 12px;
+    outline: 0;
+    transition: 0.5s;
+}
+input[type="text"]:hover, input[type="password"]:hover{
+    background-color: #ccc;
+}
+input[type="submit"]{
+    border-radius: 0;
+    color: #fff;
+    background-image: linear-gradient(to right, rgb(41,157,182) 50%, rgb(34,154,179) 50%);
+    border-bottom: 3px solid rgb(70,206,239);
+    padding-top: 8px;
+    position: relative;
+    left: 152px;
+}
+input[type="submit"]:hover{
+    opacity: 0.8;
+}
+.fa-user{
+    position: absolute;
+    top: 3px;
+    left: 8px;
+}
+.fa-lock{
+    position: absolute;
+    top: 3px;
+    left: 8px;
+}

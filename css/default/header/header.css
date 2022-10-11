@@ -1,0 +1,234 @@
+.header_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+.logo{
+    width: 252px;
+    height: 62px;
+}
+.logo_item{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.logo_item_img{
+    width: 250px;
+    height: 60px;
+    background-image: url(/img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: -8px -46px;
+}
+
+/* Поиск по сайту */
+.serch_box{
+    position: relative;
+    top: 4px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 8px;
+    border: 1px solid #e266b7;
+}
+.serch_btn{
+    color: #e5608c;
+    /* float: right; */
+    /* width: 40px; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    top: 0;
+    right: 12px;
+}
+.serch_box:hover > .serch_text{
+    width: 240px;
+    padding: 0 6px;
+}
+.serch_box:hover{
+    border: 1px solid #e266b7;
+}
+.serch_text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    /* padding: 0; */
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    /* line-height: 20px;
+    width: 240px; */
+}
+
+
+/* главное меню */
+.menu a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    transition: .3s ease-in-out;
+  }
+ .menu__link{
+    color: black;
+ }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .topmenu{
+    display: flex;
+  }
+  .topmenu > li {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+  }
+  .topmenu > li > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 30px;
+  }
+  .submenu-link:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(135deg);
+    display: inline-block;
+    color: inherit;
+    position: absolute;
+    top: 18px;
+    right: 12px;
+  }
+  .submenu {
+    background: #faf0e6;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    border: 1px solid rgb(226, 102, 183, 0.1);
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+  }
+  .submenu a {
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(226, 102, 183, .1);
+  }
+  .submenu li:last-child a { 
+    border-bottom: none; 
+}
+  .topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+.menu_active{
+    color: #e266b7;
+}
+.submenu .menu_active{
+    background-color: #fff;
+    color: #e266b7;
+}
+.menu__link:hover{
+    color: #e266b7;
+}
+
+
+
+
+
+/* Бургер меню */
+.hamburger-menu{
+    display: none;
+}
+
+@media (max-width: 1280px){
+    .logo_item_img{
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 1146px){
+    .menu__link{
+        padding: 6px 10px;
+    }
+}
+@media (max-width: 1112px){
+    .topmenu > li > a{
+        padding: 15px 20px;
+    }
+    .submenu-link:after{
+        right: 2px;
+    }
+    .serch_box input{
+        width: 160px;
+    }
+}
+@media (max-width: 1056px){
+    .menu{
+        width: 536px;
+    }
+    .menu__link{
+        padding: 6px 10px;
+    }
+    .serch_item{
+        width: 170px;
+    }
+}
+@media (max-width: 1010px){
+    .bloc_top{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .submenu-link:after{
+        content: none;
+        
+    }
+    .logo_item_img{
+        position: relative;
+        top: 6px;
+        left: 10px;
+    }
+
+    .hamburger-menu{
+        display: block;
+        position: absolute;
+        top: 24px;
+        left: 94%;
+    }
+    .header_content{
+        display: block;
+    }
+    .serch_box{
+        margin-bottom: 24px;
+        width: 90%;
+        position: relative;
+        top: 12px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .icon-search{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    .tabs{
+        display: none;
+    }
+}

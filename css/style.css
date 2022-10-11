@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url(icon-fonts.css);
+@import url(default/style.css);
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wiget_bootom_top{
+    width: 52px;
+    height: 52px;
+    background-image: url(/img/top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 75;
+    border-radius: 10px;
+    background-color: #eb86a8;
+    fill: #eb86a8;
+    display: none;
+}
+.wiget_bootom_show{
+    display: block;
+    align-self: flex-end;
+    animation-duration: 3.5s;
+    animation-iteration-count: 3;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+}
+
+.bounce-7 {
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+@keyframes bounce-7 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-10px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}

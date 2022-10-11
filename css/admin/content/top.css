@@ -1,0 +1,86 @@
+.info{
+    background: #fff; /* Цвет фона */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+    transition: 1s;
+    margin-bottom: 10px;
+}
+h2{
+    font-family: 'Roboto',sans-serif;
+    color: #c8012e;
+}
+.form_title{
+    text-align: center;
+    font-size: 24px;
+}
+.soc_seti{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.soc_seti p{
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+}
+.soc_seti input{
+    outline: none;
+    width: 200px;
+    padding: 6px 10px;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+    border: 0;
+    background-color: #edeef0;
+    margin-top: 6px;
+}
+.update{
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-bottom: 6px;
+    /* background-color: #c8012e; */
+    background-color: #fff;
+    /* color: #fff; */
+    color: black;
+    border: 1px solid #c8012e;
+    padding: 8px 10px;
+    font-family: 'Roboto',sans-serif;
+    cursor: pointer;
+}
+.update:hover{
+    background-color: #c8012e;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Скрыты блок */
+.redaction{
+    background: #fff; /* Цвет фона */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+    transition: 1s;
+    display: none;
+    margin-bottom: 10px;
+}
+.btn_form{
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-bottom: 6px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #c8012e;
+    padding: 8px 10px;
+    font-family: 'Roboto',sans-serif;
+    cursor: pointer;
+}
+.btn_form:hover{
+    background-color: #c8012e;
+    color: #fff;
+    cursor: pointer;
+}
